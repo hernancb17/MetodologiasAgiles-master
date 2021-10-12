@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe TPAgilesGrupo1.sln /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe TPAgilesGrupo1\TPAgilesGrupo1.sln
         
         
       - name: Run Tests
