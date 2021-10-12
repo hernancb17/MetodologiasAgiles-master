@@ -20,6 +20,9 @@ jobs:
       - name: Navigate to Workspace
         run: cd $GITHUB_WORKSPACE
         
+      - name: command
+        run: dir
+        
       - name: Restore Packages
         run: nuget restore .\TPAgilesGrupo1.sln
 
