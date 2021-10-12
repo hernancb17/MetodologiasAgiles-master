@@ -13,6 +13,4 @@ jobs:
         
       - name: Setup NuGet.exe for use with actions
         uses: NuGet/setup-nuget@v1.0.5
-        
-      - name: Restore NuGet packages
-        run: nuget restore TPAgilesGrupo1.TPAgilesGrupo1.sln
+  
