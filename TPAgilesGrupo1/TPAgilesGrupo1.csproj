@@ -49,9 +49,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Invitado.cs" />
-    <Compile Include="TestsArriesgarPalabras.cs" />
-    <Compile Include="TestsIngresoUsuarios.cs" />
+    <Compile Include="Model\Invitado.cs" />
+    <Compile Include="Model\Ahorcado.cs" />
+    <Compile Include="TestsAhoracado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
