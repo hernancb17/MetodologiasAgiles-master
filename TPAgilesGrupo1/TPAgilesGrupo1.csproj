@@ -50,7 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Invitado.cs" />
-    <Compile Include="TPAgilesGrupo1.cs" />
+    <Compile Include="TestsArriesgarPalabras.cs" />
+    <Compile Include="TestsIngresoUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
