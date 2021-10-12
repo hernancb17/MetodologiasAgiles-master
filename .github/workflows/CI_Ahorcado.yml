@@ -21,10 +21,7 @@ jobs:
         run: cd $GITHUB_WORKSPACE
         
       - name: command
-        run: ls *.csv | sed -e 's/^\(.*\)\..*$/- \1/' > filenames.yaml
-        
-      - name: command2
-        run: dir *.csv | sed -e 's/^\(.*\)\..*$/- \1/' > filenames.yaml
+        run: echo %cd%
         
       - name: Restore Packages
         run: nuget restore .\TPAgilesGrupo1.sln
