@@ -5,12 +5,14 @@ on:
       - master
 jobs:
   build:
-    runs-on: windows-latest    
+    runs-on: [windows-latest]    
     name: Dotnet build
     steps:
-      - uses: actions/checkout@master
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: '4.7.2'
-      - run: dotnet build TPAgilesGrupo1.sln
+      - name: setup-msbuild
+        uses: microsoft/setup-msbuild@v1.0.3
+        
+      - name: Setup NuGet.exe for use with actions
+        uses: NuGet/setup-nuget@v1.0.5
+        
+      - name: Restore NuGet packages
+        run: nuget restore TPAgilesGrupo1.TPAgilesGrupo1.sln
