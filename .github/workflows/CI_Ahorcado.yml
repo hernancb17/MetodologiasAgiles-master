@@ -19,14 +19,6 @@ jobs:
         
       - name: Navigate to Workspace
         run: cd $GITHUB_WORKSPACE
-
-      - name: run ls
-        run: ls
-
-      - name: Build Solution
-        run: |
-          msbuild.exe TPAgilesGrupo1\TPAgilesGrupo1.sln
-        
         
       - name: Run Tests
         run: vstest.console.exe .\TPAgilesGrupo1\TPAgilesGrupo1.TPAgilesGrupo1\bin\Release\TPAgilesGrupo1.Tests.dll
