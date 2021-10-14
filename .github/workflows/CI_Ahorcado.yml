@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Solution
         run: |
-          msbuild.exe .\TPAgilesGrupo1 /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release"
         
       - name: Run Tests
         run: vstest.console.exe .\TPAgilesGrupo1\TPAgilesGrupo1.Tests\bin\Release\Sandbox.Tests.dll
