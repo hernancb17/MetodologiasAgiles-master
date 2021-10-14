@@ -24,7 +24,7 @@ jobs:
         run: echo %cd%
         
       - name: Restore Packages
-        run: nuget restore .\TPAgilesGrupo1.sln
+        run: nuget restore TPAgilesGrupo1.csproj
 
       - name: Build Solution
         run: |
