@@ -21,7 +21,7 @@ jobs:
         run: |
           dir
           pwd
-          msbuild.exe ../TPAgilesGrupo1/TPAgilesGrupo1.sln /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe ../TPAgilesGrupo1/TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release"
         
         
       - name: Run Tests
