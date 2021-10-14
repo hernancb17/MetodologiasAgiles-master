@@ -19,12 +19,6 @@ jobs:
         
       - name: Navigate to Workspace
         run: cd $GITHUB_WORKSPACE
-        
-      - name: command
-        run: echo %cd%
-        
-      - name: Restore Packages
-        run: nuget restore TPAgilesGrupo1\TPAgilesGrupo1.csproj
 
       - name: Build Solution
         run: |
