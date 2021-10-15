@@ -8,6 +8,9 @@ jobs:
     runs-on: [windows-latest]    
     name: Dotnet build
     steps:
+      - name: checkout
+        uses: actions/checkout@v2.3.4
+        
       - name: setup-msbuild
         uses: microsoft/setup-msbuild@v1.0.3
         
@@ -19,10 +22,7 @@ jobs:
 
       - name: Build Solution
         run: |
-          dir
-          pwd
-          msbuild.exe TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release"
-        
-        
+          msbuild.exe ${{GITHUB_WORKSPACE}}\TPAgilesGrupo1\TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release"
+
       - name: Run Tests
         run: vstest.console.exe .\TPAgilesGrupo1\TPAgilesGrupo1.Tests\bin\Release\Sandbox.Tests.dll
