@@ -22,8 +22,7 @@ jobs:
 
       - name: Build Solution
         run: |
-          cd $GITHUB_WORKSPACE && pwd && dir
-          msbuild.exe $GITHUB_WORKSPACE\TPAgilesGrupo1\TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe .\TPAgilesGrupo1\TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release"
 
       - name: Run Tests
         run: vstest.console.exe .\TPAgilesGrupo1\TPAgilesGrupo1.Tests\bin\Release\Sandbox.Tests.dll
