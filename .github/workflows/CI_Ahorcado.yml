@@ -27,6 +27,7 @@ jobs:
       - name: Build Solution
         run: |
           msbuild.exe .\TPAgilesGrupo1\TPAgilesGrupo1.csproj /p:platform="Any CPU" /p:configuration="Release" /p:OutputPath=.\build
+          dir
           cd .\build && dir
 
       - name: Run Tests
