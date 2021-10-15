@@ -30,4 +30,4 @@ jobs:
           cd .\TPAgilesGrupo1\build && dir
 
       - name: Run Tests
-        run: vstest.console.exe .\TPAgilesGrupo1\build\bin\Release\Sandbox.Tests.dll
+        run: vstest.console.exe .\TPAgilesGrupo1\build\TPAgilesGrupo1.dll
