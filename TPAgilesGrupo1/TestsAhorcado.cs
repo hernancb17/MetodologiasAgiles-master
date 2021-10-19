@@ -120,5 +120,27 @@ namespace TestsAhorcado
         }
     }
 
+    [TestClass]
+    public class TestArriesgarLetra
+    {
+        [TestMethod]
+        public void TestIngresoLetraCorrecta()
+        {
+            Ahorcado ahorcado = new Ahorcado();
 
+            var letra = "a";
+
+            Assert.IsTrue(ahorcado.ValidarLetra(letra));
+        }
+
+        [TestMethod]
+        public void TestIngresoLetraIncorrecta()
+        {
+            Ahorcado ahorcado = new Ahorcado();
+
+            var letra = "z";
+
+            Assert.IsFalse(ahorcado.ValidarLetra(letra));
+        }
+    }
 }
