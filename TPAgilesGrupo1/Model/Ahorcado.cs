@@ -2,24 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace TPAgilesGrupo1.Model
 {
     public class Ahorcado
     {
-        private string PalabraCorrecta = "METODOLOGIAS AGILES";
+        public string PalabraCorrecta = "METODOLOGIAS AGILES";
 
         public bool ValidarIntento(string intento)
         {
             return intento.ToUpper().Equals(PalabraCorrecta);
         }
 
-        public bool ValidarLetra(string letra)
+        public bool ValidarIngresoLetra(string intentoLetra)
         {
-            int lengthAnterior = PalabraCorrecta.Length;
-            PalabraCorrecta = PalabraCorrecta.Replace(letra.ToUpper(), "");
-            return lengthAnterior != PalabraCorrecta.Length;
+            Regex expresionRegular = new Regex(@"[a-zA-Z]");
+
+            var letraValidada = expresionRegular.Matches(intentoLetra);
+
+            return letraValidada.Count == 1 ? true : false;
+        }
+        
+        public void ValidarJuego(string intento, int cont)
+        {
+            PalabraCorrecta = PalabraCorrecta.Replace(intento, "");
         }
     }
 }
