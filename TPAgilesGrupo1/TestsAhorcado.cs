@@ -119,4 +119,6 @@ namespace TestsAhorcado
             Assert.IsTrue(!invitado.ValidarIngreso(nombreInvitado));
         }
     }
+
+
 }

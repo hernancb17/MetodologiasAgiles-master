@@ -51,7 +51,7 @@
   <ItemGroup>
     <Compile Include="Model\Invitado.cs" />
     <Compile Include="Model\Ahorcado.cs" />
-    <Compile Include="TestsAhoracado.cs" />
+    <Compile Include="TestsAhorcado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
