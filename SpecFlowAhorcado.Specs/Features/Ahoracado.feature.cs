@@ -108,7 +108,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("presiono la tecla ENTER", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.Then("el sistema deberia decirme: Ingrese un caracter vallido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("el sistema deberia decirme: Ingrese un caracter valido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
