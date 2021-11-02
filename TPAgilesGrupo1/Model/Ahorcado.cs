@@ -10,8 +10,19 @@ namespace TPAgilesGrupo1.Model
     public class Ahorcado
     {
         private int IntentosRestantes = 6;
-        public string PalabraCorrecta = "METODOLOGIAS AGILES";
+        public string PalabraCorrecta;
         private string PalabraCorrectaModificada;
+        public int Puntaje = 0;
+        private int PuntosPorIntento = 10;
+
+        public Ahorcado()
+        {
+            PalabraCorrecta = "METODOLOGIAS AGILES";
+        }
+        public Ahorcado(string palabra)
+        {
+            PalabraCorrecta = palabra;
+        }
 
         public bool ValidarIntento(string intento)
         {
@@ -37,6 +48,11 @@ namespace TPAgilesGrupo1.Model
             if (lenAnterior == PalabraCorrectaModificada.Length)
             {
                 IntentosRestantes--;
+                Puntaje -= PuntosPorIntento;
+            }
+            else
+            {
+                Puntaje += PuntosPorIntento;
             }
 
             return IntentosRestantes;

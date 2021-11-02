@@ -214,4 +214,63 @@ namespace TestsAhorcado
             Assert.IsTrue(JugarIntentos(intentos) <= 0);
         }
     }
+
+    [TestClass]
+    public class TestsDefinirPalabra
+    {
+        [TestMethod]
+        public void TestDefinirPalabra()
+        {
+            string palabraAAdivinar = "palabra";
+            Ahorcado ahorcado = new Ahorcado(palabraAAdivinar);
+
+            Assert.AreEqual(palabraAAdivinar, ahorcado.PalabraCorrecta);
+        }
+    }
+
+    [TestClass]
+    public class TestsPuntaje
+    {
+        private int JugarIntentos(string[] intentos)
+        {
+            Ahorcado ahorcado = new Ahorcado();
+
+            foreach (var intento in intentos)
+            {
+                ahorcado.Jugar(intento);
+            }
+
+            return ahorcado.Puntaje;
+        }
+
+        [TestMethod]
+        public void TestJuegoPerdido()
+        {
+            string[] intentos = { "Q", "Z", "U", "C", "W", "O", "V" };
+
+            int puntaje = JugarIntentos(intentos);
+
+            Assert.AreEqual(0, puntaje);
+        }
+
+        [TestMethod]
+        public void TestJuegoParcialmenteCorrecto()
+        {
+            string[] intentos = { "M", "Z", "E", "T", "W", "O", "L", "D", "N", "G", "I", "A", "S" };
+
+            int puntaje = JugarIntentos(intentos);
+
+            Assert.AreEqual(70, puntaje);
+        }
+
+        [TestMethod]
+        public void TestJuegoPerfecto()
+        {
+            string[] intentos = { "M", "E", "T", "O", "L", "D", "G", "I", "A", "S" };
+
+            int puntaje = JugarIntentos(intentos);
+
+            Assert.AreEqual(100, puntaje);
+        }
+    }
 }
