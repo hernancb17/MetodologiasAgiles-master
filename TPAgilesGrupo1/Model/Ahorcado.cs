@@ -9,7 +9,9 @@ namespace TPAgilesGrupo1.Model
 {
     public class Ahorcado
     {
+        private int IntentosRestantes = 6;
         public string PalabraCorrecta = "METODOLOGIAS AGILES";
+        private string PalabraCorrectaModificada;
 
         public bool ValidarIntento(string intento)
         {
@@ -25,9 +27,19 @@ namespace TPAgilesGrupo1.Model
             return letraValidada.Count == 1 ? true : false;
         }
         
-        public void ValidarJuego(string intento, int cont)
+        public int Jugar(string intento)
         {
-            PalabraCorrecta = PalabraCorrecta.Replace(intento, "");
+            PalabraCorrectaModificada = PalabraCorrecta.Replace(" ", "");
+            int lenAnterior = PalabraCorrectaModificada.Length;
+
+            PalabraCorrectaModificada = PalabraCorrectaModificada.Replace(intento, "");
+
+            if (lenAnterior == PalabraCorrectaModificada.Length)
+            {
+                IntentosRestantes--;
+            }
+
+            return IntentosRestantes;
         }
     }
 }

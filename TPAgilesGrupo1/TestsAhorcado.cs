@@ -177,78 +177,41 @@ namespace TestsAhorcado
     [TestClass]
     public class TestsJuego
     {
-        [TestMethod]
-        public void TestJuegoPerfecto()
+        private int JugarIntentos(string[] intentos)
         {
             Ahorcado ahorcado = new Ahorcado();
-
-            string [] intentos = { "M", "E","T","O","L","D","G","I","A","S" };
-
-            int restanteLetras = 10;
+            int intentosRestantes = 6;
 
             foreach (var intento in intentos)
             {
-                ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(intento, "");
-
-                if (intentos[intentos.Length-1] == intento)
-                {
-                    ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(" ", "");
-
-                    restanteLetras = ahorcado.PalabraCorrecta.Length;
-                }
+                intentosRestantes = ahorcado.Jugar(intento);
             }
 
-            Assert.IsTrue(restanteLetras == 0);
+            return intentosRestantes;
+        }
+
+        [TestMethod]
+        public void TestJuegoPerfecto()
+        {
+            string [] intentos = { "M", "E","T","O","L","D","G","I","A","S" };
+
+            Assert.IsTrue(JugarIntentos(intentos) == 6);
         }
 
         [TestMethod]
         public void TestJuegoParcialmenteCorrecto()
         {
-            Ahorcado ahorcado = new Ahorcado();
-
             string[] intentos = { "M","Z", "E", "T", "W","O", "L", "D","N", "G", "I", "A", "S" };
 
-            int restanteLetras = 10;
-
-            ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(" ", "");
-
-            foreach (var intento in intentos)
-            {
-                ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(intento, "");
-
-                if (intentos[intentos.Length-1] == intento)
-                {
-                    ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(" ", "");
-
-                    restanteLetras = ahorcado.PalabraCorrecta.Length;
-                }
-            }
-
-            Assert.IsTrue(restanteLetras == 0);
+            Assert.IsTrue(JugarIntentos(intentos) == 3);
         }
 
         [TestMethod]
         public void TestJuegoPerdido()
         {
-            Ahorcado ahorcado = new Ahorcado();
-
             string[] intentos = { "Q", "Z", "U", "C", "W", "O", "V"};
 
-            int restanteLetras = 10;
-
-            foreach (var intento in intentos)
-            {
-                ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(intento, "");
-
-                if (intentos[intentos.Length-1] == intento)
-                {
-                    ahorcado.PalabraCorrecta = ahorcado.PalabraCorrecta.Replace(" ", "");
-
-                    restanteLetras = ahorcado.PalabraCorrecta.Length;
-                }
-            }
-
-            Assert.IsFalse(restanteLetras == 0);
+            Assert.IsTrue(JugarIntentos(intentos) <= 0);
         }
     }
 }

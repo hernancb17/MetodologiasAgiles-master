@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPAgilesGrupo1", "TPAgilesGrupo1\TPAgilesGrupo1.csproj", "{587B8F54-497D-4CD4-A98F-BF8F8EA8CBDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowAhorcado.Specs", "SpecFlowAhorcado.Specs\SpecFlowAhorcado.Specs.csproj", "{46B715E1-A534-4E83-8CF5-ECC803C293D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{587B8F54-497D-4CD4-A98F-BF8F8EA8CBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{587B8F54-497D-4CD4-A98F-BF8F8EA8CBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{587B8F54-497D-4CD4-A98F-BF8F8EA8CBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B715E1-A534-4E83-8CF5-ECC803C293D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B715E1-A534-4E83-8CF5-ECC803C293D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B715E1-A534-4E83-8CF5-ECC803C293D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B715E1-A534-4E83-8CF5-ECC803C293D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
