@@ -1,0 +1,9 @@
+﻿Feature: Ahorcado
+	Para evitar errores voy insertar caracteres invalidos
+
+
+Scenario:	Ingresar caracter inválido en un juego
+	Given Presiono jugar
+	And Tecleo el caracter @
+	When Presiono la tecla ENTER
+	Then El sistema deberia informarme que ingresé un caracter no valido
