@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,16 @@ namespace TPAgilesGrupo1.Model
 {
     public class Invitado
     {
+        public string nombre;
+
+        public Invitado(nombre)
+        {
+            if (ValidarIngreso(nombre))
+            {
+                this.nombre = nombre;
+            }
+        }
+
         public bool ValidarIngreso(string nombreIngresado)
         {
             if (nombreIngresado.Length > 2 && nombreIngresado.Length < 20)
