@@ -199,4 +199,29 @@ namespace TPAgilesGrupo1.Tests
             Assert.AreEqual(100, puntaje);
         }
     }
+
+    [TestClass]
+    public class TestsResultado
+    {
+        [TestMethod]
+        public void TestCompartirResultado()
+        {
+            Ahorcado ahorcado = new Ahorcado();
+            ahorcado.Puntaje = 20;
+
+            Assert.AreEqual("He conseguido 20 puntos", ahorcado.CompartirResultado());
+        }
+    }
+
+    [TestClass]
+    public class TestsInstrucciones
+    {
+        [TestMethod]
+        public void TestInstrucciones()
+        {
+            Ahorcado ahorcado = new Ahorcado();
+
+            Assert.AreEqual("sin instrucciones", ahorcado.Instrucciones);
+        }
+    }
 }

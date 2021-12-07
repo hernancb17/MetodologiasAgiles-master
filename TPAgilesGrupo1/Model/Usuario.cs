@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace TPAgilesGrupo1.Model
 {
@@ -28,12 +24,12 @@ namespace TPAgilesGrupo1.Model
 
         public bool ValidarMail(string mail)
         {
-            return false;
+            return Regex.IsMatch(mail, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
         }
-
+        
         public bool ValidarContrasena(string contrasena)
         {
-            return false;
+            return contrasena.Length >= 8;
         }
     }
 }

@@ -12,8 +12,12 @@ namespace TPAgilesGrupo1.Model
         private int IntentosRestantes = 6;
         public string PalabraCorrecta;
         private string PalabraCorrectaModificada;
+        
         public int Puntaje = 0;
         private int PuntosPorIntento = 10;
+
+        private List<String> resultados = new List<String>();
+        public string Instrucciones = "sin instrucciones";
 
         public Ahorcado()
         {
@@ -63,6 +67,17 @@ namespace TPAgilesGrupo1.Model
             }
 
             return IntentosRestantes;
+        }
+
+        public string CompartirResultado()
+        {
+            resultados.Add($"He conseguido {Puntaje} puntos");
+            resultados.Add($"s2{Puntaje}");
+            resultados.Add($"s3{Puntaje}");
+
+            int random = 0;
+
+            return resultados[random];
         }
     }
 }
