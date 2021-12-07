@@ -51,8 +51,11 @@
   <ItemGroup>
     <Compile Include="Model\Invitado.cs" />
     <Compile Include="Model\Ahorcado.cs" />
-    <Compile Include="TestsAhorcado.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Tests\TestsAhorcado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\TestsInvitado.cs" />
+    <Compile Include="Tests\TestsUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -60,6 +63,7 @@
   <ItemGroup>
     <Content Include="ATDD\AhoracadoATDD.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

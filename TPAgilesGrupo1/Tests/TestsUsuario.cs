@@ -1,16 +1,16 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using TPAgilesGrupo1.Model;
 
-namespace TestsUsuario
+namespace TPAgilesGrupo1.Tests
 {
     [TestClass]
-    public class TestIngresoUsuario
+    public class TestsUsuario
     {
         [TestMethod]
         public void TestIngresoMailVacio()
         {
-            Invitado usuario = new Usuario();
+            Usuario usuario = new Usuario();
 
             var mail = "";
 

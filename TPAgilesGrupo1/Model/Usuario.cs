@@ -2,16 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace TPAgilesGrupo1.Model
 {
-    public class Usuario : UsuarioBase
+    class User
+    {
+    }
+}
+
+
+namespace TPAgilesGrupo1.Model
+{
+    public class Usuario : Invitado
     {
         public string mail;
         public string contrasena;
 
+        public Usuario() : base()
+        {
+        }
         public Usuario(string nombre) : base(nombre)
         {
         }

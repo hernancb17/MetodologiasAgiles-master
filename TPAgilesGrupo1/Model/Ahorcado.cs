@@ -48,7 +48,14 @@ namespace TPAgilesGrupo1.Model
             if (lenAnterior == PalabraCorrectaModificada.Length)
             {
                 IntentosRestantes--;
-                Puntaje -= PuntosPorIntento;
+                if (Puntaje - PuntosPorIntento < 0)
+                {
+                    Puntaje = 0;
+                }
+                else
+                {
+                    Puntaje -= PuntosPorIntento;
+                }
             }
             else
             {

@@ -2,7 +2,7 @@
 using System;
 using TPAgilesGrupo1.Model;
 
-namespace TestsAhorcado
+namespace TPAgilesGrupo1.Tests
 {
     [TestClass]
     public class TestArriesgarPalabra

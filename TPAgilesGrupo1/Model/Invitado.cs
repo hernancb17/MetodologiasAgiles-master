@@ -11,7 +11,11 @@ namespace TPAgilesGrupo1.Model
     {
         public string nombre;
 
-        public Invitado(nombre)
+        public Invitado()
+        {
+            this.nombre = "guest451656";
+        }
+        public Invitado(string nombre)
         {
             if (ValidarIngreso(nombre))
             {
