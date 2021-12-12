@@ -208,8 +208,12 @@ namespace TPAgilesGrupo1.Tests
         {
             Ahorcado ahorcado = new Ahorcado();
             ahorcado.Puntaje = 20;
+            int Seed = 100;
+            int random = new Random(Seed).Next(4);
 
-            Assert.AreEqual("He conseguido 20 puntos", ahorcado.CompartirResultado());
+            string resultado = ahorcado.CompartirResultado();
+
+            Assert.AreEqual(ahorcado.Resultados[random], resultado);
         }
     }
 
