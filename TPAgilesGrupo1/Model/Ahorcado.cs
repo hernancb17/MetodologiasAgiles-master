@@ -16,7 +16,7 @@ namespace TPAgilesGrupo1.Model
         public int Puntaje = 0;
         private int PuntosPorIntento = 10;
 
-        private List<String> resultados = new List<String>();
+        public List<String> Resultados = new List<String>();
         public string Instrucciones = "sin instrucciones";
 
         public Ahorcado()
@@ -71,13 +71,15 @@ namespace TPAgilesGrupo1.Model
 
         public string CompartirResultado()
         {
-            resultados.Add($"He conseguido {Puntaje} puntos");
-            resultados.Add($"s2{Puntaje}");
-            resultados.Add($"s3{Puntaje}");
+            Resultados.Add($"Mi puntaje es {Puntaje}.");
+            Resultados.Add($"Mi puntaje es {Puntaje}. Con {IntentosRestantes} vidas restantes.");
+            Resultados.Add($"He adivinado la palabra correcta: {PalabraCorrecta}. Mi puntaje es {Puntaje}.");
+            Resultados.Add($"He ganado el juego con un puntaje de {Puntaje}, y con {IntentosRestantes} vidas restantes.");
 
-            int random = 0;
+            int Seed = 100;
+            int random = new Random(Seed).Next(4);
 
-            return resultados[random];
+            return Resultados[random];
         }
     }
 }
