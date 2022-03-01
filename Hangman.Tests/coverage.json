@@ -1,0 +1,807 @@
+{
+  "Hangman.Data.dll": {
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\HangmanContext.cs": {
+      "Hangman.Data.HangmanContext": {
+        "System.Void Hangman.Data.HangmanContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Hangman.Data.Models.Users> Hangman.Data.HangmanContext::get_Users()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Hangman.Data.Models.Games> Hangman.Data.HangmanContext::get_Games()": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.Data.HangmanContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Models\\BaseEntity.cs": {
+      "Hangman.Data.Models.BaseEntity": {
+        "System.Int32 Hangman.Data.Models.BaseEntity::get_Id()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Models\\Games.cs": {
+      "Hangman.Data.Models.Games": {
+        "System.String Hangman.Data.Models.Games::get_Word()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Hangman.Data.Models.Users Hangman.Data.Models.Games::get_User()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Models\\TimerWrapper.cs": {
+      "Hangman.Data.Models.TimerWrapper": {
+        "System.Timers.Timer Hangman.Data.Models.TimerWrapper::get_Timer()": {
+          "Lines": {
+            "11": 14
+          },
+          "Branches": []
+        },
+        "System.Double Hangman.Data.Models.TimerWrapper::GetTimer()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.Data.Models.TimerWrapper::.ctor()": {
+          "Lines": {
+            "13": 7,
+            "14": 7,
+            "15": 7,
+            "16": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Models\\Users.cs": {
+      "Hangman.Data.Models.Users": {
+        "System.Int32 Hangman.Data.Models.Users::get_Age()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String Hangman.Data.Models.Users::get_Username()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Migrations\\20200629233829_Initial2.cs": {
+      "Hangman.Data.Migrations.Initial2": {
+        "System.Void Hangman.Data.Migrations.Initial2::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.Data.Migrations.Initial2::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Migrations\\20200629233829_Initial2.Designer.cs": {
+      "Hangman.Data.Migrations.Initial2": {
+        "System.Void Hangman.Data.Migrations.Initial2::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman.Data\\Migrations\\HangmanContextModelSnapshot.cs": {
+      "Hangman.Data.Migrations.HangmanContextModelSnapshot": {
+        "System.Void Hangman.Data.Migrations.HangmanContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "87": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Hangman.dll": {
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman\\Game.cs": {
+      "Hangman.Game": {
+        "System.String Hangman.Game::get_Username()": {
+          "Lines": {
+            "9": 16
+          },
+          "Branches": []
+        },
+        "System.String Hangman.Game::get_Word()": {
+          "Lines": {
+            "10": 42
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> Hangman.Game::get_RandomWords()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Hangman.Game::get_ListOfWords()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Hangman.Game::get_Tries()": {
+          "Lines": {
+            "13": 33
+          },
+          "Branches": []
+        },
+        "System.Boolean Hangman.Game::get_Adivina()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> Hangman.Game::get_Attempts()": {
+          "Lines": {
+            "15": 31
+          },
+          "Branches": []
+        },
+        "System.Int32 Hangman.Game::get_Fails()": {
+          "Lines": {
+            "16": 18
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.Double,System.Int32> Hangman.Game::get_Score()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Hangman.Data.Interfaces.ITimer Hangman.Game::get__Time()": {
+          "Lines": {
+            "18": 21
+          },
+          "Branches": []
+        },
+        "Hangman.Data.Interfaces.IGame Hangman.Game::Start(System.String)": {
+          "Lines": {
+            "35": 6,
+            "36": 6,
+            "37": 6,
+            "38": 6,
+            "39": 6,
+            "40": 6,
+            "41": 6,
+            "42": 6,
+            "43": 6,
+            "44": 6,
+            "45": 6,
+            "47": 6,
+            "48": 6
+          },
+          "Branches": []
+        },
+        "Hangman.Data.Interfaces.IGame Hangman.Game::Config(System.String,System.Int32)": {
+          "Lines": {
+            "50": 5,
+            "51": 5,
+            "52": 5,
+            "53": 5,
+            "54": 5,
+            "56": 5,
+            "57": 5
+          },
+          "Branches": []
+        },
+        "Hangman.Data.Interfaces.IGame Hangman.Game::Config(System.Collections.Generic.List`1<System.String>,System.Int32)": {
+          "Lines": {
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "66": 0,
+            "67": 0
+          },
+          "Branches": []
+        },
+        "Hangman.Data.Interfaces.IGame Hangman.Game::Guess(System.String)": {
+          "Lines": {
+            "70": 4,
+            "71": 4,
+            "72": 4,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "78": 4,
+            "79": 4,
+            "80": 4,
+            "81": 20,
+            "82": 4,
+            "83": 4,
+            "84": 4,
+            "86": 4,
+            "88": 4,
+            "90": 4,
+            "92": 4,
+            "94": 4
+          },
+          "Branches": [
+            {
+              "Line": 72,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 12,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 81,
+              "Offset": 99,
+              "EndOffset": 73,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 81,
+              "Offset": 99,
+              "EndOffset": 101,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Double Hangman.Game::GetTime()": {
+          "Lines": {
+            "96": 0,
+            "97": 0,
+            "98": 0
+          },
+          "Branches": []
+        },
+        "System.Void Hangman.Game::CheckTries(System.String)": {
+          "Lines": {
+            "101": 4,
+            "102": 4,
+            "103": 3,
+            "105": 3,
+            "106": 3,
+            "107": 3,
+            "108": 4,
+            "109": 1,
+            "110": 1,
+            "111": 1,
+            "112": 1,
+            "113": 4
+          },
+          "Branches": [
+            {
+              "Line": 102,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 102,
+              "Offset": 12,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 108,
+              "Offset": 66,
+              "EndOffset": 68,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 108,
+              "Offset": 66,
+              "EndOffset": 104,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Hangman.Game::CheckWin()": {
+          "Lines": {
+            "116": 4,
+            "117": 4,
+            "118": 4,
+            "119": 4,
+            "120": 20,
+            "121": 4,
+            "122": 4,
+            "123": 3,
+            "124": 45,
+            "125": 18,
+            "126": 18,
+            "127": 18,
+            "128": 3,
+            "129": 3,
+            "130": 3,
+            "131": 18,
+            "132": 3,
+            "133": 4,
+            "134": 4,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 4
+          },
+          "Branches": [
+            {
+              "Line": 120,
+              "Offset": 140,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 4
+            },
+            {
+              "Line": 122,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 124,
+              "Offset": 129,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 18
+            },
+            {
+              "Line": 127,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 127,
+              "Offset": 108,
+              "EndOffset": 116,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 18
+            },
+            {
+              "Line": 124,
+              "Offset": 129,
+              "EndOffset": 131,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 122,
+              "Offset": 69,
+              "EndOffset": 132,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 120,
+              "Offset": 140,
+              "EndOffset": 142,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 4
+            },
+            {
+              "Line": 134,
+              "Offset": 167,
+              "EndOffset": 169,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 134,
+              "Offset": 167,
+              "EndOffset": 201,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Boolean Hangman.Game::CheckLetter(System.String)": {
+          "Lines": {
+            "142": 4,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "149": 0,
+            "150": 4,
+            "151": 4
+          },
+          "Branches": [
+            {
+              "Line": 143,
+              "Offset": 49,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 145,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 145,
+              "Offset": 34,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void Hangman.Game::.ctor(Hangman.Data.Interfaces.ITimer)": {
+          "Lines": {
+            "20": 7,
+            "21": 7,
+            "22": 7,
+            "23": 7,
+            "24": 7,
+            "25": 7,
+            "26": 7,
+            "27": 7,
+            "28": 7,
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "32": 7,
+            "33": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Ignacio Brasca\\Documents\\MetodologiasAgiles\\Hangman\\Program.cs": {
+      "Hangman.Program": {
+        "System.Void Hangman.Program::Main(System.String[])": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 136,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 118,
+              "EndOffset": 120,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 118,
+              "EndOffset": 131,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 136,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}
